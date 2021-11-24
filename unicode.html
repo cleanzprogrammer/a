@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>Unicode Converter</title>
+		<link rel="stylesheet" href="master.css" media="screen">
+		<!--<link rel="stylesheet" href="converters.css" media="screen">-->
+		<script class="u-script" type="text/javascript" src="master.js" defer=""></script>
+		<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">	
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "",
+			"sameAs": []
+		}
+		</script>
+		<meta name="theme-color" content="#e67b13">
+		<meta property="og:title" content="Home">
+		<meta property="og:type" content="website">
+	</head>
+</head>
+
+<section>
+<h2>UNICODE Converter</h2>
+<hr>
+
+<center>
+<p>Please input UNICODE number:</p>
+
+<input id="numb" type="text">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<br>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+ 
+  <tr>
+    <th><center><p id="demo"></center></p></th>
+  </tr>
+  
+</table>
+
+
+<p><img src="uni1.jpg" style="width:700px;height:400px;"></p>
+<p><img src="uni3.jpg" style="width:700px;height:400px;"></p>        
+<p><img src="uni4.jpg" style="width:700px;height:400px;"></p>  			
+
+<p></p>
+<p></p>         
+
+<br>
+
+
+</center>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  
+    text = x;
+    unicode = ("&#x" + x)
+  
+  document.getElementById("demo").innerHTML = unicode;
+}
+</script>
+
+
+</section>
+
+
+	<section class="u-backlink u-clearfix u-grey-80">
+	  <p class="u-text">
+		<span><a href="project.html">BACK TO PROJECT</a></span>
+	  </p>
+	</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

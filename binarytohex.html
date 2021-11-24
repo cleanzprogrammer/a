@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>Binary to Hexadecimal Converter</title>
+		<link rel="stylesheet" href="master.css" media="screen">
+		<!--<link rel="stylesheet" href="converters.css" media="screen">-->
+		<script class="u-script" type="text/javascript" src="master.js" defer=""></script>
+		<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">	
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "",
+			"sameAs": []
+		}
+		</script>
+		<meta name="theme-color" content="#e67b13">
+		<meta property="og:title" content="Home">
+		<meta property="og:type" content="website">
+	</head>
+</head>
+<body>
+
+<section>
+<h2>Project 1: Binary to Hexidecimal</h2>
+<hr>	
+
+
+<p><img src="bintohex.jpg"></p>
+        
+			
+         
+<input type="number" id="inputBin" value="">
+
+<p>Enter any 4 digit binary number:</p>
+
+<button onclick="binToHex()">Submit</button>
+
+<p>Hexidecimal Value : </p>
+<p id="demo"></p>
+
+<script>
+function binToHex() {
+  var x = document.getElementById("inputBin").value;
+  var hexOut = parseInt(x , 2).toString(16).toUpperCase();
+  document.getElementById("demo").innerHTML = hexOut;
+  }
+</script>
+
+
+
+</section>
+
+
+	<section class="u-backlink u-clearfix u-grey-80">
+	  <p class="u-text">
+		<span><a href="project.html">BACK TO PROJECT</a></span>
+	  </p>
+	</section>
+
+</body>
+</html>
